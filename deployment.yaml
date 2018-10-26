@@ -18,7 +18,8 @@ metadata:
   name: jenkinsapp
   namespace: default
 spec:
-  strategy: Recreate
+  strategy:
+    type: Recreate
   replicas: 1
   template:
     metadata:
