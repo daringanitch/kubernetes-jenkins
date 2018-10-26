@@ -23,7 +23,6 @@ node {
 
     stage "Deploy"
 
-        sh "kubectl apply -f deployment.yaml"
         sh "kubectl set image deployments/jenkinsapp jenkinsapp=claudioacquaviva/jenkinsapp"
 
 }
