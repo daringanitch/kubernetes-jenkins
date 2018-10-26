@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: acqua-ingress
+  namespace: default
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+        - path: /hello
+          backend:
+            serviceName: jenkinsapp
+            servicePort: 4000
+        - path: /sentence
+          backend:
+            serviceName: jenkinsapp
+            servicePort: 4000
+        - path: /hw2
+          backend:
+            serviceName: jenkinsapp
+            servicePort: 4000
