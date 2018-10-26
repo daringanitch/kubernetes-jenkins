@@ -9,11 +9,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Jenkins testxxxxx', 200
+    return 'Jenkins test', 200
 
 @app.route('/sentence')
 def sentence():
-    return 'Hello World, Jenkins version xxxxxx', 200
+    return 'Hello World, Jenkins version yyy', 200
 
 @app.route('/hello')
 def hello():
