@@ -13,7 +13,7 @@ def index():
 
 @app.route('/sentence')
 def sentence():
-    return 'Hello World, Jenkins version GGGGGGGGG', 200
+    return 'Hello World, Jenkins version Acqua', 200
 
 @app.route('/hello')
 def hello():
