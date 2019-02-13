@@ -8,8 +8,8 @@ node {
 
     tag = readFile('commit-id').replace("\n", "").replace("\r", "")
     tag = "latest"
-    appName = "jenkinsapp"
-    registryHost = "claudioacquaviva/"
+    appName = "jenkinsapp1"
+    registryHost = "dganitch/"
     imageName = "${registryHost}${appName}:${tag}"
     env.BUILDIMG=imageName
 
